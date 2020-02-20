@@ -13,11 +13,11 @@ namespace Timer
         private bool isError, hasChange;
         private Thread t;
 
-        public ErrorTimer()
+        public ErrorTimer(int seconds)
         {
             isError = false;
             hasChange = false;
-            t = new Thread(() => { hasError = waitForError(); });
+            t = new Thread(() => { hasError = waitForError(seconds); });
         }
 
         //Starts the thread that waits a certain amount of time
@@ -59,11 +59,11 @@ namespace Timer
         }
 
         //Waits three seconds then executes code
-        public bool waitForError()
+        public bool waitForError(int seconds)
         {
             Random r = new Random();
             int rand = r.Next(0, 1);
-            Thread.Sleep(3000);
+            Thread.Sleep(seconds * 1000);
             return (rand == 1);
         }
 

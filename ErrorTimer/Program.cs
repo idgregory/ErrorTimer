@@ -12,7 +12,7 @@ namespace Timer
    
         static void Main(string[] args)
         {
-            ErrorTimer et = new ErrorTimer();
+            ErrorTimer et = new ErrorTimer(2);
             et.start(); //start thread
             while(et.isAlive())
             {
