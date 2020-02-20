@@ -1,0 +1,6 @@
+c:\users\ian\documents\visual studio 2015\Projects\ErrorTimer\ErrorTimer\bin\Debug\ErrorTimer.exe.config
+c:\users\ian\documents\visual studio 2015\Projects\ErrorTimer\ErrorTimer\bin\Debug\ErrorTimer.exe
+c:\users\ian\documents\visual studio 2015\Projects\ErrorTimer\ErrorTimer\bin\Debug\ErrorTimer.pdb
+c:\users\ian\documents\visual studio 2015\Projects\ErrorTimer\ErrorTimer\obj\Debug\ErrorTimer.csprojResolveAssemblyReference.cache
+c:\users\ian\documents\visual studio 2015\Projects\ErrorTimer\ErrorTimer\obj\Debug\ErrorTimer.exe
+c:\users\ian\documents\visual studio 2015\Projects\ErrorTimer\ErrorTimer\obj\Debug\ErrorTimer.pdb
