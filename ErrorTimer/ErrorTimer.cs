@@ -64,7 +64,7 @@ namespace Timer
             Random r = new Random();
             int rand = r.Next(0, 1);
             Thread.Sleep(3000);
-            return (rand == 1); ;
+            return (rand == 1);
         }
 
     }
