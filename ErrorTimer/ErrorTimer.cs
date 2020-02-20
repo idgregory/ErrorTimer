@@ -13,11 +13,13 @@ namespace Timer
         private bool isError, hasChange;
         private Thread t;
 
+        //Constructor: recieves an int that reresents the waiting period
         public ErrorTimer(int seconds)
         {
             isError = false;
             hasChange = false;
-            t = new Thread(() => { hasError = waitForError(seconds); });
+            if(seconds < 0) t = new Thread(() => { hasError = waitForError(0); });
+            else t = new Thread(() => { hasError = waitForError(seconds); });
         }
 
         //Starts the thread that waits a certain amount of time
@@ -44,7 +46,7 @@ namespace Timer
             }
         }
 
-        //Method invoded by hasError
+        //Method invoked by hasError
         private void OnErrorChange()
         {
 
